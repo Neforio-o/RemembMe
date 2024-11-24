@@ -167,7 +167,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="MyFolder\**\*">
+    <None Include="tessdata\**\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
