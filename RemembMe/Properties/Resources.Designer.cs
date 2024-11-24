@@ -61,6 +61,46 @@ namespace RemembMe.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] chi_sim {
+            get {
+                object obj = ResourceManager.GetObject("chi_sim", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] deu {
+            get {
+                object obj = ResourceManager.GetObject("deu", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] eng {
+            get {
+                object obj = ResourceManager.GetObject("eng", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] fra {
+            get {
+                object obj = ResourceManager.GetObject("fra", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Frame_12 {
@@ -87,6 +127,46 @@ namespace RemembMe.Properties {
             get {
                 object obj = ResourceManager.GetObject("Frame11", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] ita {
+            get {
+                object obj = ResourceManager.GetObject("ita", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] jpn {
+            get {
+                object obj = ResourceManager.GetObject("jpn", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] kor {
+            get {
+                object obj = ResourceManager.GetObject("kor", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] rus {
+            get {
+                object obj = ResourceManager.GetObject("rus", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

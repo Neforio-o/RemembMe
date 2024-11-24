@@ -108,6 +108,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\tessdata\chi_sim.traineddata" />
+    <None Include="bin\Debug\tessdata\deu.traineddata" />
+    <None Include="bin\Debug\tessdata\eng.traineddata" />
+    <None Include="bin\Debug\tessdata\fra.traineddata" />
+    <None Include="bin\Debug\tessdata\ita.traineddata" />
+    <None Include="bin\Debug\tessdata\jpn.traineddata" />
+    <None Include="bin\Debug\tessdata\kor.traineddata" />
+    <None Include="bin\Debug\tessdata\rus.traineddata" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -151,6 +159,7 @@
   <ItemGroup>
     <None Include="Resources\Untitled2.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Tesseract.5.2.0\build\Tesseract.targets" Condition="Exists('..\packages\Tesseract.5.2.0\build\Tesseract.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

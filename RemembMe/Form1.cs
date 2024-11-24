@@ -495,6 +495,7 @@ namespace RemembMe
                             }
                         }
                         string recognizedText = RecognizeText(cloneBitmap, GetSelectedLanguage());
+                        
                         Clipboard.SetText(recognizedText); 
                         CloseFreezeScreen();
                     }
@@ -599,17 +600,18 @@ namespace RemembMe
         }
         public static string RecognizeText(Bitmap image, string selectedLanguage)
         {
-            // Путь к папке tessdata
+
+            //Путь к папке tessdata
             string tessDataPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tessdata");
-            
+
             try
             {
                 using (var engine = new TesseractEngine(tessDataPath, selectedLanguage, EngineMode.Default))
                 {
-                    
+
                     using (var page = engine.Process(image))
                     {
-                        
+
                         if (page.GetText() == "")
                         {
                             return "Текст не распознан";
@@ -622,9 +624,9 @@ namespace RemembMe
                 }
             }
 
-            catch 
+            catch (Exception ex)
             {
-                return "Текст не распознан"; 
+                return $"Ошибка: {ex.Message}";
             }
         }
 
