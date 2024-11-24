@@ -167,6 +167,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="MyFolder\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Untitled3.ico" />
   </ItemGroup>
   <ItemGroup>
