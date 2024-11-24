@@ -1,4 +1,4 @@
-# RemembMe
+# RemembMe (x64)
 This application is designed to simplify the creation of screenshots. Do you often have situations where you need to extract text from an image? I have it all the time! Therefore, if necessary, use it!
 
 The application starts immediately in the tray, where you will also find the settings!
