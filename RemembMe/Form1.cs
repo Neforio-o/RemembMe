@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using Tesseract;
 using RemembMe.Properties;
 using System.Runtime.CompilerServices;
+using System.Reflection;
 
 namespace RemembMe
 {
@@ -499,9 +500,9 @@ namespace RemembMe
                         Clipboard.SetText(recognizedText); 
                         CloseFreezeScreen();
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        Clipboard.SetText("Текст не распознан");
+                        Clipboard.SetText($"Ошибка:{ex.Message}");
                         _instance.ResetApplicationState();
                     }
                     
