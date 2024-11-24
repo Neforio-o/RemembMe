@@ -13,3 +13,4 @@ Selection example:
 
 
 p.s. The English translation will be available in the following versions!
+p.s.s An open source optimization will be done, so you can download the installer for now
