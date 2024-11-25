@@ -13,4 +13,4 @@ Selection example:
 
 
 p.s. The English translation will be available in the following versions!
-p.s.s An open source optimization will be done, so you can download the installer for now [here](https://github.com/Neforio-o/RemembMe/releases/download/v1.0/RemembMe.exe)
+p.s.s An open source optimization will be done, so you can download the installer for now [here](https://github.com/Neforio-o/RemembMe/releases)
