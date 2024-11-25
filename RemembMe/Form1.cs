@@ -220,6 +220,7 @@ namespace RemembMe
 
         private void RemembMe_Load(object sender, EventArgs e)
         {
+            Settings.Default.OpenorNot = false;
             SetHook();
         }
 
@@ -530,9 +531,12 @@ namespace RemembMe
 
         private void настройкиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3(this);
-            form3.Show();
-            Form2 f = new Form2();
+            if (!Settings.Default.OpenorNot)
+            {
+                Form3 form3 = new Form3(this);
+                form3.Show();
+                Form2 f = new Form2();
+            }
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
@@ -638,7 +642,15 @@ namespace RemembMe
             graphics?.Dispose();
         }
 
-
+        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (!Settings.Default.OpenorNot && e.Button == MouseButtons.Left)
+            {
+                Form3 form3 = new Form3(this);
+                form3.Show();
+                Form2 f = new Form2();
+            }
+        }
     }
 
     class NativeUtilities

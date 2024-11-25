@@ -23,8 +23,10 @@ namespace RemembMe
         private string selectedLanguage = "eng+rus";
         public Form3(RemembMe r)
         {
+            this.Icon = Resources.Untitled4;
             InitializeComponent();
             remembMe = r;
+            
         }
 
         private void Close_btn_Click(object sender, EventArgs e)
@@ -86,7 +88,7 @@ namespace RemembMe
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            Settings.Default.OpenorNot = true;
             Close_btn.Select();
             int default_Index = (int)Settings.Default.SelectedLanguageIndex;
             if (default_Index != -1)
@@ -260,6 +262,7 @@ namespace RemembMe
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Settings.Default.OpenorNot = false;
             if (HotkeyTextBox.Text == "")
             {
                 MessageBox.Show("Установлены стандартные горячие клавиши: Ctrl+Q");

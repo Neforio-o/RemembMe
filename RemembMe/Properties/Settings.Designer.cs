@@ -106,5 +106,17 @@ namespace RemembMe.Properties {
                 this["LinkToSave"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool OpenorNot {
+            get {
+                return ((bool)(this["OpenorNot"]));
+            }
+            set {
+                this["OpenorNot"] = value;
+            }
+        }
     }
 }
