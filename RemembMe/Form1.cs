@@ -546,10 +546,7 @@ namespace RemembMe
 
         private void оRemembMeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("О приложении" + Environment.NewLine +
-                "RemembMe" + Environment.NewLine +
-                "Version: 1.0" + Environment.NewLine +
-                "https://github.com/Neforio-o");
+            MessageBox.Show("RemembMe" + Environment.NewLine + "Version: 1.1" + Environment.NewLine + "https://github.com/Neforio-o");
         }
         private void ResetApplicationState()
         {
@@ -629,9 +626,9 @@ namespace RemembMe
                 }
             }
 
-            catch (Exception ex)
+            catch (Exception ex) // обрабатывал ошибки для устронения багов
             {
-                return $"Ошибка: {ex.Message}";
+                return "";
             }
         }
 
@@ -650,6 +647,17 @@ namespace RemembMe
                 form3.Show();
                 Form2 f = new Form2();
             }
+        }
+
+        private void CreateScreenshoot_Click(object sender, EventArgs e)
+        {
+            _instance.Opacity = 0;
+            _instance.CloseFreezeScreen();
+            Bitmap screenshot = ScreenCapture();
+            _instance.isScreenStart = true;
+            _instance.FreezeScreen(screenshot);
+            _instance.Focus();
+            _instance.Opacity = 0.4;
         }
     }
 

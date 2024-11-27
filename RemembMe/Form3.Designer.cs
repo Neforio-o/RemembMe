@@ -126,9 +126,9 @@
             this.label1.Location = new System.Drawing.Point(29, 95);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(515, 24);
+            this.label1.Size = new System.Drawing.Size(511, 24);
             this.label1.TabIndex = 66;
-            this.label1.Text = "Ваше сочетание клавиш для открытия RemembMe";
+            this.label1.Text = "Ваше сочетание клавиш для создания скриншота";
             // 
             // HotkeyTextBox
             // 
@@ -199,7 +199,7 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.textBox1.Font = new System.Drawing.Font("Montserrat Medium", 10F, System.Drawing.FontStyle.Bold);
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(364, 573);
+            this.textBox1.Location = new System.Drawing.Point(560, 573);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(33, 28);
