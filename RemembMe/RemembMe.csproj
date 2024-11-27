@@ -196,10 +196,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled3.ico" />
+    <None Include="Resources\Untitled3.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled4.ico" />
+    <None Include="Resources\Untitled4.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled2.png" />

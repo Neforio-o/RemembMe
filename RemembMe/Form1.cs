@@ -170,7 +170,7 @@ namespace RemembMe
                     {
                         _instance.isScreenStart = false;
                         _instance.ResetApplicationState();
-                        return (IntPtr)1;
+                        return CallNextHookEx(IntPtr.Zero, code, (int)wParam, lParam);
                     }
                     else
                     {
